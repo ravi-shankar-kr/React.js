@@ -5,7 +5,7 @@ function App() {
 
   const jobOpenings = [
     {
-      brandLogo: "https://logo.clearbit.com/meta.com",
+      brandLogo: "https://upload.wikimedia.org/wikipedia/commons/0/05/Facebook_Logo_(2019).png",
       companyName: "Meta",
       datePosted: "5 days ago",
       post: "Frontend Developer",
@@ -15,7 +15,7 @@ function App() {
       location: "Mumbai, India"
     },
     {
-      brandLogo: "https://logo.clearbit.com/amazon.com",
+      brandLogo: "https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg",
       companyName: "Amazon",
       datePosted: "2 weeks ago",
       post: "Cloud Engineer",
@@ -25,7 +25,7 @@ function App() {
       location: "Bangalore, India"
     },
     {
-      brandLogo: "https://logo.clearbit.com/apple.com",
+      brandLogo: "https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg",
       companyName: "Apple",
       datePosted: "10 days ago",
       post: "iOS Developer",
@@ -35,7 +35,7 @@ function App() {
       location: "Hyderabad, India"
     },
     {
-      brandLogo: "https://logo.clearbit.com/netflix.com",
+      brandLogo: "https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_N_logo.svg",
       companyName: "Netflix",
       datePosted: "3 weeks ago",
       post: "Backend Developer",
@@ -45,7 +45,7 @@ function App() {
       location: "Pune, India"
     },
     {
-      brandLogo: "https://logo.clearbit.com/google.com",
+      brandLogo: "https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg",
       companyName: "Google",
       datePosted: "1 week ago",
       post: "Machine Learning Engineer",
@@ -55,7 +55,7 @@ function App() {
       location: "Gurgaon, India"
     },
     {
-      brandLogo: "https://logo.clearbit.com/microsoft.com",
+      brandLogo: "https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg",
       companyName: "Microsoft",
       datePosted: "4 days ago",
       post: "DevOps Engineer",
@@ -65,7 +65,7 @@ function App() {
       location: "Noida, India"
     },
     {
-      brandLogo: "https://logo.clearbit.com/nvidia.com",
+      brandLogo: "https://upload.wikimedia.org/wikipedia/en/2/21/Nvidia_logo.svg",
       companyName: "NVIDIA",
       datePosted: "2 months ago",
       post: "AI Research Intern",
@@ -75,7 +75,7 @@ function App() {
       location: "Chennai, India"
     },
     {
-      brandLogo: "https://logo.clearbit.com/adobe.com",
+      brandLogo: "https://upload.wikimedia.org/wikipedia/commons/3/3d/Adobe_Corporate_Logo.png",
       companyName: "Adobe",
       datePosted: "6 days ago",
       post: "UI/UX Designer",
@@ -85,7 +85,7 @@ function App() {
       location: "New Delhi, India"
     },
     {
-      brandLogo: "https://logo.clearbit.com/tesla.com",
+      brandLogo: "https://upload.wikimedia.org/wikipedia/commons/e/e8/Tesla_logo.png",
       companyName: "Tesla",
       datePosted: "10 weeks ago",
       post: "Software Engineer",
@@ -95,7 +95,7 @@ function App() {
       location: "Bangalore, India"
     },
     {
-      brandLogo: "https://logo.clearbit.com/openai.com",
+      brandLogo: "https://upload.wikimedia.org/wikipedia/commons/4/4d/OpenAI_Logo.svg",
       companyName: "OpenAI",
       datePosted: "3 days ago",
       post: "Data Scientist",
@@ -105,12 +105,13 @@ function App() {
       location: "Remote"
     }
   ];
+  
 
   return (
     <>
       <div className="parent">
         {jobOpenings.map(function(elem){
-          return <Card company={elem.companyName} logo={elem.brandLogo} post={elem.post} date={elem.datePosted} tag1={elem.tag1} tag2={elem.tag2} pay={elem.pay} location={elem.location}/>
+          return <Card company={elem.companyName} logo={elem.brandLogo} post={elem.post} date={elem.datePosted} tag1={elem.tag1} tag2={elem.tag2} pay={elem.pay} location={elem.l}/>
         })}
       </div>
     </>
