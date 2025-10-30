@@ -15,7 +15,7 @@ const Ravi = () => {
 
   return (
     <div>
-        <h1>The number of A is {a}</h1>
+        <h1>{a}</h1>
         <button onClick={inc}>Increasing</button>
         <button onClick={dec}>Decreasing</button>
     </div>
