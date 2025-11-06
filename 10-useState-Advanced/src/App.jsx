@@ -44,6 +44,7 @@ const App = () => {
 
   return (
     <div>
+       <button className='p-10 border  '>click</button>
       <h1 className='text-5xl m-6  '>{num}</h1>
       <button onClick={btnClick} className='px-5 py-3 m-3 rounded-3xl bg-gray-200'>Click</button>
 
@@ -55,6 +56,7 @@ const App = () => {
 
       <h1 className='text-5xl m-6  '>{useArr.user}, {useArr.age}</h1>
       <button onClick={userArray} className='px-5 py-3 m-3 rounded-3xl bg-gray-200'>Click</button>
+      
     
     </div>
   )
