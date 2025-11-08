@@ -1,4 +1,6 @@
 import React, { useState } from 'react'
+import { X} from 'lucide-react';   
+
 
 const App = () => {
 
@@ -7,7 +9,7 @@ const App = () => {
 
   const [task, setTask] = useState([])
 
-  const submitHandler =(e) => {
+  const submitHandler =(e) => { 
     e.preventDefault();
     // console.log( title);
     // console.log(details);
@@ -70,6 +72,7 @@ const App = () => {
         {task.map(function(elem, idx) {
 
          return  <div key={idx}  className="relative h-50 w-40 bg-cover py-9 px-4 bg-[url('https://static.vecteezy.com/system/resources/previews/037/152/677/non_2x/sticky-note-paper-background-free-png.png')] rounded-2xl text-black p-4">
+          <h2><X /></h2>
           <h3 className='leading-tight text-xl font-bold'>{ elem.title}</h3> 
           <p className='mt-4 leading-tight font-medium text-gray-700'>{elem.details} </p>
           </div>
