@@ -1,17 +1,40 @@
 import React from 'react'
+import axios from 'axios'
+import { useState } from 'react'
 
 const App = () => {
 
-  localStorage.setItem('user', 'Ravi')
+  const [data, setData] = useState([])
 
-  const user = localStorage.getItem('user');
-  console.log(user);
-  
+  //  const  getData = async () => {
+
+    // const response =  await fetch('https://jsonplaceholder.typicode.com/todos/1')
+    //  const data = await response.json()
+    // console.log(data);
+  // 
+  // }
+
+  const getData = async () => {
+    const response = await axios.get('https://picsum.photos/v2/list')
+     
+    setData(response.data);
+
+    // console.log("data is getting")
+
+    
+  }
 
 
   return (
     <div> 
-      <h1 className='bg-red-600 text-2xl'>Hello</h1>
+      
+       <button onClick={getData} className='border border-black p-3'>Click</button>
+       <div>
+        {data.map(function(elem,idx){
+
+          return <div> {idx} Hello {elem.author}</div>
+        })}
+       </div>
     </div>
   )
 }
